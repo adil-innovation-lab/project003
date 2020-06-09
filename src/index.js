@@ -2,11 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import MediaCard from './MediaCard';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App/>
+    <MediaCard title="Adil Altaf" body={<p><strong>My</strong> picture</p>} imageURL='./AdilAltaf.jpg' altText="Image of Adil Altaf" />
   </React.StrictMode>,
   document.getElementById('root')
 );
